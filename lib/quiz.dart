@@ -36,6 +36,13 @@ class _QuizState extends State<quiz> {
     }
   }
 
+  void restartQuiz() {
+    setState(() {
+      selectedAnswer = [];
+      activeScreen = 'question-screen';
+    });
+  }
+
   @override
   Widget build(context) {
     // this variable will only availaible in this build method ..
@@ -46,7 +53,8 @@ class _QuizState extends State<quiz> {
     }
 
     if (activeScreen == 'result-screen') {
-      screenWidget = ResultsScreen(chosenAnswers: selectedAnswer);
+      screenWidget =
+          ResultsScreen(chosenAnswers: selectedAnswer, onRestart: restartQuiz);
     }
 
     return MaterialApp(
