@@ -1,6 +1,6 @@
 # quiz_app
 
-A new Flutter project.
+A Flutter Quiz App designed to test and enhance your knowledge of Flutter concepts. This app features multiple-choice questions covering widgets, state management, Dart fundamentals, and more. With an interactive UI, score tracking, and instant feedback, it's a great way to learn and challenge yourself while mastering Flutter development! 🚀📱
 
 ## Getting Started
 
